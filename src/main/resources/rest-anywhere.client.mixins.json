@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "rest_anywhere.example.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"ExampleClientMixin",
+		"ClientPlayerEntityMixin",
+		"PlayerEntityModelMixin",
+		"PlayerEntityMixin",
+		"KeyboardInputMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

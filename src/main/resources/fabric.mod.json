@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "rest-anywhere",
+	"version": "1.0.0",
+	"name": "Rest Anywhere",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Yuucc"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rest-anywhere/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"rest_anywhere.example.RestAnywhere"
+		],
+		"client": [
+			"rest_anywhere.example.RestAnywhereClient"
+		]
+	},
+	"mixins": [
+		"rest-anywhere.mixins.json",
+		{
+			"config": "rest-anywhere.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
